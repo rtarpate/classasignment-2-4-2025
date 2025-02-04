@@ -15,28 +15,34 @@ namespace classasignment_2_4_2025
 
             //declaration:
 
-            double tax = double.MaxValue;
+            double tax = double.MaxValue;//intiate value
 
-            double promotion=double.MaxValue;
+            double promotion=double.MaxValue;//intiate value
 
-            double price = double.MaxValue;
+            double price = double.MaxValue;//initate value
 
-            double totalsale=double.MaxValue;
+            double totalsale=double.MaxValue;//intiate value
 
             //ask for the price
 
             //keep asking user to input a value until a vaild value is input
 
-            try
-            {  
-                 Console.WriteLine("how much is the price?");
-
-                 price = Convert.ToDouble(Console.ReadLine());
-            }
-            catch (Exception e)
+            do
             {
-                Console.WriteLine("invaild input");
-            }
+                try
+                {
+                    Console.WriteLine("how much is the price?");
+
+                    price = Convert.ToDouble(Console.ReadLine());//this method can trigger an exception when format number is input
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("invaild input");
+                }
+            } while (price == double.MaxValue); //keep repeat when the varbil still have the initate value
+         
+        
+            
 
             //ask for promotion
             Console.WriteLine("how much is the promotion(decmial)");
