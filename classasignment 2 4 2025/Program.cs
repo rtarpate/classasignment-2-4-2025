@@ -13,10 +13,10 @@ namespace classasignment_2_4_2025
     internal class Program
     {
          static double HandleDoubleInput(string aMessage)
-          {
+         {
             double returnValue = double.MaxValue;
               do
-            {
+              {
                 try
                 {
                     Console.WriteLine(aMessage);
@@ -28,9 +28,9 @@ namespace classasignment_2_4_2025
                 {
                     Console.WriteLine("invaild input please input a valid numebr");
                 }
-            } while (returnValue == double.MaxValue) ; //keep repeat when the varbil still have the initate value
+              } while (returnValue == double.MaxValue) ; //keep repeat when the varbil still have the initate value
             return returnValue;
-        }
+         }
         static void Main(string[] args)
         {
             //quiz: calualte the total cost of a sale
