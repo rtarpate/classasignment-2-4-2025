@@ -19,7 +19,7 @@ namespace classasignment_2_4_2025
 
             double promotion;
 
-            double price;
+            double price = double.MaxValue;
 
             double totalsale;
 
