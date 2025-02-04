@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,10 +24,17 @@ namespace classasignment_2_4_2025
             double totalsale;
 
             //ask for the price
-            Console.WriteLine("how much is the price?");
 
-            price = Convert.ToDouble(Console.ReadLine());
+            try
+            {  
+                 Console.WriteLine("how much is the price?");
 
+                 price = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("invaild input");
+            }
             //ask for promotion
             Console.WriteLine("how much is the promotion");
 
