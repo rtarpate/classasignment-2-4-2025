@@ -36,12 +36,12 @@ namespace classasignment_2_4_2025
                 Console.WriteLine("invaild input");
             }
             //ask for promotion
-            Console.WriteLine("how much is the promotion");
+            Console.WriteLine("how much is the promotion(decmial)");
 
             promotion = Convert.ToDouble(Console.ReadLine());
 
             //ask for tax
-            Console.WriteLine("how much is the tax");
+            Console.WriteLine("how much is the tax(decmail)");
 
             tax = Convert.ToDouble(Console.ReadLine());
 
