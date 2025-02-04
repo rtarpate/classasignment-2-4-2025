@@ -40,6 +40,7 @@ namespace classasignment_2_4_2025
             //caluate total
             totalsale = price-(1-promotion)- (1-tax);
 
+            //output totalsales
             Console.WriteLine(totalsale);
 
             Console.ReadLine();
