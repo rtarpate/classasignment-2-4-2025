@@ -87,7 +87,7 @@ namespace classasignment_2_4_2025
             //caluate total
             totalsale = price-(1-promotion)- (1-tax);
 
-            int customerbill = HandleIntegerInput(" Bill should be a whole number ");
+            int customerbill = HandleIntegerInput(" How much did cutomer provide, Bill should be a whole number ");
 
             //output totalsales
             Console.WriteLine(totalsale);
