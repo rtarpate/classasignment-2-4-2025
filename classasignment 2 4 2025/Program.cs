@@ -31,6 +31,26 @@ namespace classasignment_2_4_2025
               } while (returnValue == double.MaxValue) ; //keep repeat when the varbil still have the initate value
             return returnValue;
          }
+
+        static int HandleIntegerInput(string aMessage)
+        {
+            int returnValue = int.MaxValue;
+            do
+            {
+                try
+                {
+                    Console.WriteLine(aMessage);
+
+                    returnValue = Convert.ToInt32(Console.ReadLine());//this method can trigger an exception when format number is input
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("invaild input please input a valid numebr");
+                }
+            } while (returnValue == double.MaxValue); //keep repeat when the varbil still have the initate value
+            return returnValue;
+        }
         static void Main(string[] args)
         {
             //quiz: calualte the total cost of a sale
@@ -66,6 +86,8 @@ namespace classasignment_2_4_2025
 
             //caluate total
             totalsale = price-(1-promotion)- (1-tax);
+
+            int customerbill = HandleIntegerInput(" Bill should be a whole number ");
 
             //output totalsales
             Console.WriteLine(totalsale);
