@@ -15,13 +15,13 @@ namespace classasignment_2_4_2025
 
             //declaration
 
-            double tax;
+            double tax = double.MaxValue;
 
-            double promotion;
+            double promotion=double.MaxValue;
 
             double price = double.MaxValue;
 
-            double totalsale;
+            double totalsale=double.MaxValue;
 
             //ask for the price
 
