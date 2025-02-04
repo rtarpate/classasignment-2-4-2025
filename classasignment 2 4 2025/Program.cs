@@ -11,9 +11,9 @@ namespace classasignment_2_4_2025
     {
         static void Main(string[] args)
         {
-            //quiz =: cakyate the total cost of a sale
+            //quiz: calualte the total cost of a sale
 
-            //declaration
+            //declaration:
 
             double tax = double.MaxValue;
 
@@ -25,6 +25,8 @@ namespace classasignment_2_4_2025
 
             //ask for the price
 
+            //keep asking user to input a value until a vaild value is input
+
             try
             {  
                  Console.WriteLine("how much is the price?");
@@ -35,6 +37,7 @@ namespace classasignment_2_4_2025
             {
                 Console.WriteLine("invaild input");
             }
+
             //ask for promotion
             Console.WriteLine("how much is the promotion(decmial)");
 
